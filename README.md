@@ -17,8 +17,8 @@ This is the first template after learn HTML & CSS
 
 ### Links
 
-- Solution on github: [here](https://github.com/mahmood601/nft-preview-card-component-main)
-- Live Site: [here](https://mahmood601.github.io/nft-preview-card-component-main)
+- Solution on github: [here](https://github.com/mahmood601/Leon-_-Template-One)
+- Live Site: [here](https://mahmood601.github.io/Leon-_-Template-One)
 
 ## My process
 

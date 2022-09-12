@@ -2,7 +2,8 @@
 :root {
   --sec-padding: 60px;
   --maincolor: #10cab7;
-  --sec-color: gray;
+  --sec-color: #eee;
+  --text-color: #777;
 }
 /* End Variables */
 
@@ -11,7 +12,7 @@
   font-size: 60px;
   font-weight: bold;
   letter-spacing: -4px;
-  color: #ddd;
+  color: #ccc;
   padding-top: 40px;
   margin-bottom: -23px;
   text-align:center;
@@ -19,7 +20,7 @@
 
 .special-heading + p {
   margin-bottom: 60px;
-  color: var(--sec-color);
+  color: var(--text-color);
   text-align: center;
 }
 /* special */
@@ -177,8 +178,9 @@ html {
 /*  header  */
 /* landing */
 .landing {
-  background: url("../images/mountain.jpeg");
+  background: url("../images/mountain.WebP");
   background-size: cover;
+  width: 100%;
 }
 
 .landing .container {
@@ -226,17 +228,17 @@ html {
   font-weight: bold;
 }
 
-.animation {
+.features i,
+.services i {
   font-size: 40px;
   padding: 20px;
   margin-right: 20px;
   color: var(--maincolor);
-  transition: 2s;
-  animation: beauty 5s linear 0.2s 1;
+ 
 }
 
 .features p {
-  color: var(--sec-color);
+  color: var(--text-color);
   line-height: 1.8;
 }
 
@@ -247,14 +249,17 @@ html {
   padding-top: var(--sec-padding);
 }
 
-.services .serv {
-  display: flex;
-  flex-direction: row;
-}
-
 .services .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.services .serv {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
 }
 
 .services h3 {
@@ -265,6 +270,7 @@ html {
   font-weight: 300;
   margin-bottom: 60px;
   line-height: 1.5;
+  color: var(--text-color);
 }
 /* services */
 
@@ -283,6 +289,7 @@ background-color: #eee;
 .portfolio .folio {
 	background-color: #fff;
 	margin-bottom: 20px;
+	width: 100%;
 }
 
 .portfolio img {
@@ -293,7 +300,7 @@ background-color: #eee;
 }
 
 .portfolio p {
-	color: var(--sec-color);
+	color: var(--text-color);
 	line-height: 1.5;
 	padding: 0 20px 20px 20px;
 }
@@ -322,7 +329,7 @@ background-color: #eee;
 
 .about p:last-of-type {
   margin-top: 40px;
-  color: var(--sec-color);
+  color: var(--text-color);
 }
 
 .about .span {
@@ -400,18 +407,3 @@ background-color: #eee;
   color: var(--maincolor);
 }
 /* Footer */
-
-/* animation */
-@keyframes beauty {
-  from {
-    font-size: 15px;
-    color: #000;
-    opacity: 0.5;
-  }
-  to {
-    transform: rotateZ(720deg);
-    font-size: 40px;
-    color: var(--maincolor);
-  }
-}
-/* animation */

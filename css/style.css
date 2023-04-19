@@ -292,6 +292,11 @@ background-color: #eee;
 	width: 100%;
 }
 
+.portfolio .folio:hover {
+  transform: translateY(-10px);
+  transition: .9s;
+}
+
 .portfolio img {
   width: 100%;
 }
@@ -403,7 +408,10 @@ background-color: #eee;
   background-color: #2C4755;
   color: white;
 }
-.footer span {
+.footer .name {
   color: var(--maincolor);
 }
 /* Footer */
+.animation {
+  transition: .8s;
+}
